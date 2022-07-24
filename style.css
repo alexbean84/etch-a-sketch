@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: limegreen;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+    margin-top: 0 auto 0 auto;
+}
+
+.grid {
+    display: flex;
+    background-color: snow;
+    border-radius: 5px;
+    border: solid cornflowerblue 3px;
+    box-shadow: 5px 5px;
+    width: 40vw;
+    height: 30vw;
+    max-width: 550px;
+    max-height: 550px;
+    margin: 0 auto 0 auto;
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    background-color: salmon;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-family: 'Acme', sans-serif;
+    color: floralwhite;
+    text-shadow: 1px 1px black;
+}
+
+button {
+    display: flex;
+    margin-bottom: 5px;
+    background-color: springgreen;
+    border: 2px solid springgreen;
+    border-radius: 5px;
+    color: ivory;
+
+}
