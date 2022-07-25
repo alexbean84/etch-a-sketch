@@ -2,11 +2,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: limegreen;
+    background-color: papayawhip;
     width: 100vw;
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    --grid-cols: 1;
+    --grid-rows: 1;
 }
 
 .container1 {
@@ -20,7 +22,10 @@ body {
 }
 
 .grid {
-    display: flex;
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
     background-color: snow;
     border-radius: 5px;
     border: solid cornflowerblue 3px;
@@ -30,21 +35,23 @@ body {
     max-width: 550px;
     max-height: 550px;
     margin: 0 auto 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
-.container3 {
+.container2 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto 0 auto;
-    background-color: salmon;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    background-color: deepskyblue;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 10px;
+    border-radius: 50px;
     font-family: 'Acme', sans-serif;
     color: floralwhite;
     text-shadow: 1px 1px black;
@@ -53,9 +60,24 @@ body {
 button {
     display: flex;
     margin-bottom: 5px;
-    background-color: springgreen;
-    border: 2px solid springgreen;
-    border-radius: 5px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 15px;
     color: ivory;
+    font-family: roboto;
+}
 
+.headline {
+    display: flex;
+    margin-top: 0;
+}
+
+.sub {
+    display: flex;
+    margin: 0;
+}
+
+.grid-item {
+    border: 2px solid deepskyblue;
+    text-indent: -9999px;
 }
