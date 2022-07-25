@@ -73,3 +73,7 @@ function initialize() {
         alert('Try Again!');
     }
 }
+
+function reset() {
+    location.reload();
+}
