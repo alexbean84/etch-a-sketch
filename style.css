@@ -1,95 +1,2807 @@
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: papayawhip;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: papayawhip;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Indie Flower', cursive;
-    font-size: large;
-    margin-top: 0 auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Indie Flower", cursive;
+  font-size: large;
+  margin-top: 0 auto 0 auto;
 }
 
 .grid {
-    display: grid;
-    grid-gap: 0;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-    background-color: snow;
-    border-radius: 5px;
-    border: solid cornflowerblue 3px;
-    box-shadow: 5px 5px;
-    width: 40vw;
-    height: 30vw;
-    max-width: 550px;
-    max-height: 550px;
-    margin: 0 auto 0 auto;
-    margin-top: 20px;
-    overflow: hidden;
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  background-color: snow;
+  border-radius: 5px;
+  border: solid cornflowerblue 3px;
+  box-shadow: 5px 5px;
+  width: 40vw;
+  height: 30vw;
+  max-width: 550px;
+  max-height: 550px;
+  margin: 0 auto 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto 0 auto;
-    background-color: deepskyblue;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 50px;
-    font-family: 'Acme', sans-serif;
-    color: floralwhite;
-    text-shadow: 1px 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  background-color: deepskyblue;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+  font-family: "Acme", sans-serif;
+  color: floralwhite;
+  text-shadow: 1px 1px black;
 }
 
 button {
-    display: flex;
-    margin-bottom: 5px;
-    background-color: orange;
-    border: 2px solid orange;
-    border-radius: 15px;
-    color: ivory;
-    font-family: roboto;
-    transition-duration: 0.4s;
+  display: flex;
+  margin-bottom: 5px;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 15px;
+  color: ivory;
+  font-family: roboto;
+  transition-duration: 0.4s;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: orchid;
-    border-color: orchid;
+  cursor: pointer;
+  background-color: orchid;
+  border-color: orchid;
 }
 
 .headline {
-    display: flex;
-    margin-top: 0;
+  display: flex;
+  margin-top: 0;
 }
 
 .sub {
-    display: flex;
-    margin: 0;
+  display: flex;
+  margin: 0;
 }
 
 .grid-item {
-    border: 2px solid deepskyblue;
-    text-indent: -9999px;
+  border: 2px solid deepskyblue;
+  text-indent: -9999px;
+  transition: 0s 9999s;
 }
 
 img {
-    transition: transform .7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
+
 img:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
+
+.grid-item:hover {
+  background-color: var(--circle-color);
+  transition: 0s;
+}
+.grid-item:hover:nth-child(0) {
+  --circle-color: rgb(189, 151, 210);
+}
+.grid-item:hover:nth-child(1) {
+  --circle-color: rgb(131, 154, 232);
+}
+.grid-item:hover:nth-child(2) {
+  --circle-color: rgb(82, 15, 245);
+}
+.grid-item:hover:nth-child(3) {
+  --circle-color: rgb(85, 64, 88);
+}
+.grid-item:hover:nth-child(4) {
+  --circle-color: rgb(47, 167, 96);
+}
+.grid-item:hover:nth-child(5) {
+  --circle-color: rgb(190, 197, 64);
+}
+.grid-item:hover:nth-child(6) {
+  --circle-color: rgb(61, 225, 105);
+}
+.grid-item:hover:nth-child(7) {
+  --circle-color: rgb(11, 15, 173);
+}
+.grid-item:hover:nth-child(8) {
+  --circle-color: rgb(225, 111, 253);
+}
+.grid-item:hover:nth-child(9) {
+  --circle-color: rgb(254, 150, 179);
+}
+.grid-item:hover:nth-child(10) {
+  --circle-color: rgb(79, 153, 159);
+}
+.grid-item:hover:nth-child(11) {
+  --circle-color: rgb(244, 140, 186);
+}
+.grid-item:hover:nth-child(12) {
+  --circle-color: rgb(74, 202, 213);
+}
+.grid-item:hover:nth-child(13) {
+  --circle-color: rgb(22, 174, 218);
+}
+.grid-item:hover:nth-child(14) {
+  --circle-color: rgb(136, 156, 103);
+}
+.grid-item:hover:nth-child(15) {
+  --circle-color: rgb(107, 236, 156);
+}
+.grid-item:hover:nth-child(16) {
+  --circle-color: rgb(85, 119, 28);
+}
+.grid-item:hover:nth-child(17) {
+  --circle-color: rgb(75, 209, 160);
+}
+.grid-item:hover:nth-child(18) {
+  --circle-color: rgb(183, 70, 122);
+}
+.grid-item:hover:nth-child(19) {
+  --circle-color: rgb(99, 80, 76);
+}
+.grid-item:hover:nth-child(20) {
+  --circle-color: rgb(75, 71, 195);
+}
+.grid-item:hover:nth-child(21) {
+  --circle-color: rgb(238, 91, 52);
+}
+.grid-item:hover:nth-child(22) {
+  --circle-color: rgb(204, 72, 229);
+}
+.grid-item:hover:nth-child(23) {
+  --circle-color: rgb(38, 209, 6);
+}
+.grid-item:hover:nth-child(24) {
+  --circle-color: rgb(20, 240, 243);
+}
+.grid-item:hover:nth-child(25) {
+  --circle-color: rgb(105, 107, 146);
+}
+.grid-item:hover:nth-child(26) {
+  --circle-color: rgb(155, 241, 228);
+}
+.grid-item:hover:nth-child(27) {
+  --circle-color: rgb(38, 146, 122);
+}
+.grid-item:hover:nth-child(28) {
+  --circle-color: rgb(212, 242, 74);
+}
+.grid-item:hover:nth-child(29) {
+  --circle-color: rgb(252, 159, 75);
+}
+.grid-item:hover:nth-child(30) {
+  --circle-color: rgb(57, 250, 79);
+}
+.grid-item:hover:nth-child(31) {
+  --circle-color: rgb(193, 173, 231);
+}
+.grid-item:hover:nth-child(32) {
+  --circle-color: rgb(28, 183, 12);
+}
+.grid-item:hover:nth-child(33) {
+  --circle-color: rgb(180, 203, 215);
+}
+.grid-item:hover:nth-child(34) {
+  --circle-color: rgb(12, 88, 94);
+}
+.grid-item:hover:nth-child(35) {
+  --circle-color: rgb(14, 21, 70);
+}
+.grid-item:hover:nth-child(36) {
+  --circle-color: rgb(56, 64, 155);
+}
+.grid-item:hover:nth-child(37) {
+  --circle-color: rgb(236, 237, 46);
+}
+.grid-item:hover:nth-child(38) {
+  --circle-color: rgb(251, 48, 90);
+}
+.grid-item:hover:nth-child(39) {
+  --circle-color: rgb(72, 137, 241);
+}
+.grid-item:hover:nth-child(40) {
+  --circle-color: rgb(103, 81, 105);
+}
+.grid-item:hover:nth-child(41) {
+  --circle-color: rgb(196, 224, 92);
+}
+.grid-item:hover:nth-child(42) {
+  --circle-color: rgb(254, 21, 169);
+}
+.grid-item:hover:nth-child(43) {
+  --circle-color: rgb(206, 46, 123);
+}
+.grid-item:hover:nth-child(44) {
+  --circle-color: rgb(76, 251, 153);
+}
+.grid-item:hover:nth-child(45) {
+  --circle-color: rgb(19, 81, 255);
+}
+.grid-item:hover:nth-child(46) {
+  --circle-color: rgb(250, 21, 241);
+}
+.grid-item:hover:nth-child(47) {
+  --circle-color: rgb(105, 238, 167);
+}
+.grid-item:hover:nth-child(48) {
+  --circle-color: rgb(203, 245, 195);
+}
+.grid-item:hover:nth-child(49) {
+  --circle-color: rgb(174, 204, 123);
+}
+.grid-item:hover:nth-child(50) {
+  --circle-color: rgb(245, 82, 245);
+}
+.grid-item:hover:nth-child(51) {
+  --circle-color: rgb(73, 102, 176);
+}
+.grid-item:hover:nth-child(52) {
+  --circle-color: rgb(100, 199, 251);
+}
+.grid-item:hover:nth-child(53) {
+  --circle-color: rgb(153, 194, 82);
+}
+.grid-item:hover:nth-child(54) {
+  --circle-color: rgb(42, 219, 234);
+}
+.grid-item:hover:nth-child(55) {
+  --circle-color: rgb(171, 123, 205);
+}
+.grid-item:hover:nth-child(56) {
+  --circle-color: rgb(235, 217, 91);
+}
+.grid-item:hover:nth-child(57) {
+  --circle-color: rgb(169, 185, 246);
+}
+.grid-item:hover:nth-child(58) {
+  --circle-color: rgb(136, 81, 83);
+}
+.grid-item:hover:nth-child(59) {
+  --circle-color: rgb(87, 181, 19);
+}
+.grid-item:hover:nth-child(60) {
+  --circle-color: rgb(102, 151, 202);
+}
+.grid-item:hover:nth-child(61) {
+  --circle-color: rgb(180, 213, 63);
+}
+.grid-item:hover:nth-child(62) {
+  --circle-color: rgb(73, 4, 7);
+}
+.grid-item:hover:nth-child(63) {
+  --circle-color: rgb(126, 74, 76);
+}
+.grid-item:hover:nth-child(64) {
+  --circle-color: rgb(159, 33, 168);
+}
+.grid-item:hover:nth-child(65) {
+  --circle-color: rgb(213, 201, 182);
+}
+.grid-item:hover:nth-child(66) {
+  --circle-color: rgb(221, 139, 8);
+}
+.grid-item:hover:nth-child(67) {
+  --circle-color: rgb(90, 186, 251);
+}
+.grid-item:hover:nth-child(68) {
+  --circle-color: rgb(44, 39, 35);
+}
+.grid-item:hover:nth-child(69) {
+  --circle-color: rgb(195, 35, 58);
+}
+.grid-item:hover:nth-child(70) {
+  --circle-color: rgb(177, 223, 26);
+}
+.grid-item:hover:nth-child(71) {
+  --circle-color: rgb(16, 233, 208);
+}
+.grid-item:hover:nth-child(72) {
+  --circle-color: rgb(30, 87, 125);
+}
+.grid-item:hover:nth-child(73) {
+  --circle-color: rgb(26, 16, 219);
+}
+.grid-item:hover:nth-child(74) {
+  --circle-color: rgb(60, 52, 189);
+}
+.grid-item:hover:nth-child(75) {
+  --circle-color: rgb(90, 99, 97);
+}
+.grid-item:hover:nth-child(76) {
+  --circle-color: rgb(159, 247, 132);
+}
+.grid-item:hover:nth-child(77) {
+  --circle-color: rgb(124, 136, 255);
+}
+.grid-item:hover:nth-child(78) {
+  --circle-color: rgb(105, 248, 6);
+}
+.grid-item:hover:nth-child(79) {
+  --circle-color: rgb(72, 123, 60);
+}
+.grid-item:hover:nth-child(80) {
+  --circle-color: rgb(69, 14, 142);
+}
+.grid-item:hover:nth-child(81) {
+  --circle-color: rgb(134, 235, 67);
+}
+.grid-item:hover:nth-child(82) {
+  --circle-color: rgb(227, 239, 92);
+}
+.grid-item:hover:nth-child(83) {
+  --circle-color: rgb(49, 255, 154);
+}
+.grid-item:hover:nth-child(84) {
+  --circle-color: rgb(27, 199, 61);
+}
+.grid-item:hover:nth-child(85) {
+  --circle-color: rgb(226, 17, 232);
+}
+.grid-item:hover:nth-child(86) {
+  --circle-color: rgb(49, 100, 43);
+}
+.grid-item:hover:nth-child(87) {
+  --circle-color: rgb(232, 78, 84);
+}
+.grid-item:hover:nth-child(88) {
+  --circle-color: rgb(60, 150, 38);
+}
+.grid-item:hover:nth-child(89) {
+  --circle-color: rgb(197, 37, 239);
+}
+.grid-item:hover:nth-child(90) {
+  --circle-color: rgb(187, 106, 55);
+}
+.grid-item:hover:nth-child(91) {
+  --circle-color: rgb(173, 247, 127);
+}
+.grid-item:hover:nth-child(92) {
+  --circle-color: rgb(208, 222, 241);
+}
+.grid-item:hover:nth-child(93) {
+  --circle-color: rgb(194, 73, 133);
+}
+.grid-item:hover:nth-child(94) {
+  --circle-color: rgb(47, 140, 211);
+}
+.grid-item:hover:nth-child(95) {
+  --circle-color: rgb(187, 20, 125);
+}
+.grid-item:hover:nth-child(96) {
+  --circle-color: rgb(141, 90, 212);
+}
+.grid-item:hover:nth-child(97) {
+  --circle-color: rgb(56, 26, 151);
+}
+.grid-item:hover:nth-child(98) {
+  --circle-color: rgb(84, 160, 133);
+}
+.grid-item:hover:nth-child(99) {
+  --circle-color: rgb(177, 30, 242);
+}
+.grid-item:hover:nth-child(100) {
+  --circle-color: rgb(138, 4, 118);
+}
+.grid-item:hover:nth-child(101) {
+  --circle-color: rgb(94, 61, 92);
+}
+.grid-item:hover:nth-child(102) {
+  --circle-color: rgb(16, 217, 200);
+}
+.grid-item:hover:nth-child(103) {
+  --circle-color: rgb(236, 126, 39);
+}
+.grid-item:hover:nth-child(104) {
+  --circle-color: rgb(11, 135, 139);
+}
+.grid-item:hover:nth-child(105) {
+  --circle-color: rgb(83, 112, 28);
+}
+.grid-item:hover:nth-child(106) {
+  --circle-color: rgb(139, 252, 145);
+}
+.grid-item:hover:nth-child(107) {
+  --circle-color: rgb(157, 16, 98);
+}
+.grid-item:hover:nth-child(108) {
+  --circle-color: rgb(171, 208, 245);
+}
+.grid-item:hover:nth-child(109) {
+  --circle-color: rgb(141, 57, 211);
+}
+.grid-item:hover:nth-child(110) {
+  --circle-color: rgb(241, 95, 5);
+}
+.grid-item:hover:nth-child(111) {
+  --circle-color: rgb(81, 222, 235);
+}
+.grid-item:hover:nth-child(112) {
+  --circle-color: rgb(29, 125, 135);
+}
+.grid-item:hover:nth-child(113) {
+  --circle-color: rgb(163, 246, 226);
+}
+.grid-item:hover:nth-child(114) {
+  --circle-color: rgb(71, 184, 35);
+}
+.grid-item:hover:nth-child(115) {
+  --circle-color: rgb(137, 242, 131);
+}
+.grid-item:hover:nth-child(116) {
+  --circle-color: rgb(70, 54, 180);
+}
+.grid-item:hover:nth-child(117) {
+  --circle-color: rgb(239, 184, 248);
+}
+.grid-item:hover:nth-child(118) {
+  --circle-color: rgb(160, 170, 160);
+}
+.grid-item:hover:nth-child(119) {
+  --circle-color: rgb(159, 35, 119);
+}
+.grid-item:hover:nth-child(120) {
+  --circle-color: rgb(104, 68, 79);
+}
+.grid-item:hover:nth-child(121) {
+  --circle-color: rgb(128, 151, 72);
+}
+.grid-item:hover:nth-child(122) {
+  --circle-color: rgb(6, 72, 194);
+}
+.grid-item:hover:nth-child(123) {
+  --circle-color: rgb(37, 75, 245);
+}
+.grid-item:hover:nth-child(124) {
+  --circle-color: rgb(72, 133, 146);
+}
+.grid-item:hover:nth-child(125) {
+  --circle-color: rgb(165, 153, 170);
+}
+.grid-item:hover:nth-child(126) {
+  --circle-color: rgb(163, 246, 95);
+}
+.grid-item:hover:nth-child(127) {
+  --circle-color: rgb(212, 82, 159);
+}
+.grid-item:hover:nth-child(128) {
+  --circle-color: rgb(117, 164, 205);
+}
+.grid-item:hover:nth-child(129) {
+  --circle-color: rgb(248, 189, 221);
+}
+.grid-item:hover:nth-child(130) {
+  --circle-color: rgb(123, 179, 154);
+}
+.grid-item:hover:nth-child(131) {
+  --circle-color: rgb(245, 215, 200);
+}
+.grid-item:hover:nth-child(132) {
+  --circle-color: rgb(228, 233, 129);
+}
+.grid-item:hover:nth-child(133) {
+  --circle-color: rgb(111, 209, 89);
+}
+.grid-item:hover:nth-child(134) {
+  --circle-color: rgb(69, 157, 16);
+}
+.grid-item:hover:nth-child(135) {
+  --circle-color: rgb(135, 42, 3);
+}
+.grid-item:hover:nth-child(136) {
+  --circle-color: rgb(82, 214, 57);
+}
+.grid-item:hover:nth-child(137) {
+  --circle-color: rgb(131, 45, 55);
+}
+.grid-item:hover:nth-child(138) {
+  --circle-color: rgb(37, 206, 239);
+}
+.grid-item:hover:nth-child(139) {
+  --circle-color: rgb(73, 66, 36);
+}
+.grid-item:hover:nth-child(140) {
+  --circle-color: rgb(217, 224, 41);
+}
+.grid-item:hover:nth-child(141) {
+  --circle-color: rgb(40, 43, 245);
+}
+.grid-item:hover:nth-child(142) {
+  --circle-color: rgb(207, 79, 220);
+}
+.grid-item:hover:nth-child(143) {
+  --circle-color: rgb(36, 156, 97);
+}
+.grid-item:hover:nth-child(144) {
+  --circle-color: rgb(230, 97, 233);
+}
+.grid-item:hover:nth-child(145) {
+  --circle-color: rgb(167, 129, 83);
+}
+.grid-item:hover:nth-child(146) {
+  --circle-color: rgb(64, 175, 177);
+}
+.grid-item:hover:nth-child(147) {
+  --circle-color: rgb(11, 118, 38);
+}
+.grid-item:hover:nth-child(148) {
+  --circle-color: rgb(212, 100, 109);
+}
+.grid-item:hover:nth-child(149) {
+  --circle-color: rgb(103, 82, 245);
+}
+.grid-item:hover:nth-child(150) {
+  --circle-color: rgb(249, 58, 57);
+}
+.grid-item:hover:nth-child(151) {
+  --circle-color: rgb(155, 24, 220);
+}
+.grid-item:hover:nth-child(152) {
+  --circle-color: rgb(247, 14, 24);
+}
+.grid-item:hover:nth-child(153) {
+  --circle-color: rgb(228, 50, 28);
+}
+.grid-item:hover:nth-child(154) {
+  --circle-color: rgb(36, 83, 30);
+}
+.grid-item:hover:nth-child(155) {
+  --circle-color: rgb(80, 241, 174);
+}
+.grid-item:hover:nth-child(156) {
+  --circle-color: rgb(90, 35, 160);
+}
+.grid-item:hover:nth-child(157) {
+  --circle-color: rgb(182, 54, 231);
+}
+.grid-item:hover:nth-child(158) {
+  --circle-color: rgb(32, 95, 105);
+}
+.grid-item:hover:nth-child(159) {
+  --circle-color: rgb(49, 76, 236);
+}
+.grid-item:hover:nth-child(160) {
+  --circle-color: rgb(158, 225, 190);
+}
+.grid-item:hover:nth-child(161) {
+  --circle-color: rgb(48, 147, 175);
+}
+.grid-item:hover:nth-child(162) {
+  --circle-color: rgb(242, 238, 19);
+}
+.grid-item:hover:nth-child(163) {
+  --circle-color: rgb(48, 240, 126);
+}
+.grid-item:hover:nth-child(164) {
+  --circle-color: rgb(221, 57, 131);
+}
+.grid-item:hover:nth-child(165) {
+  --circle-color: rgb(147, 61, 42);
+}
+.grid-item:hover:nth-child(166) {
+  --circle-color: rgb(230, 11, 137);
+}
+.grid-item:hover:nth-child(167) {
+  --circle-color: rgb(252, 70, 17);
+}
+.grid-item:hover:nth-child(168) {
+  --circle-color: rgb(66, 30, 215);
+}
+.grid-item:hover:nth-child(169) {
+  --circle-color: rgb(140, 228, 1);
+}
+.grid-item:hover:nth-child(170) {
+  --circle-color: rgb(14, 13, 141);
+}
+.grid-item:hover:nth-child(171) {
+  --circle-color: rgb(22, 8, 98);
+}
+.grid-item:hover:nth-child(172) {
+  --circle-color: rgb(187, 63, 195);
+}
+.grid-item:hover:nth-child(173) {
+  --circle-color: rgb(144, 227, 129);
+}
+.grid-item:hover:nth-child(174) {
+  --circle-color: rgb(148, 190, 206);
+}
+.grid-item:hover:nth-child(175) {
+  --circle-color: rgb(75, 78, 44);
+}
+.grid-item:hover:nth-child(176) {
+  --circle-color: rgb(153, 43, 148);
+}
+.grid-item:hover:nth-child(177) {
+  --circle-color: rgb(77, 71, 72);
+}
+.grid-item:hover:nth-child(178) {
+  --circle-color: rgb(164, 242, 229);
+}
+.grid-item:hover:nth-child(179) {
+  --circle-color: rgb(154, 79, 12);
+}
+.grid-item:hover:nth-child(180) {
+  --circle-color: rgb(58, 118, 239);
+}
+.grid-item:hover:nth-child(181) {
+  --circle-color: rgb(219, 90, 245);
+}
+.grid-item:hover:nth-child(182) {
+  --circle-color: rgb(191, 239, 184);
+}
+.grid-item:hover:nth-child(183) {
+  --circle-color: rgb(243, 179, 201);
+}
+.grid-item:hover:nth-child(184) {
+  --circle-color: rgb(43, 178, 81);
+}
+.grid-item:hover:nth-child(185) {
+  --circle-color: rgb(177, 217, 19);
+}
+.grid-item:hover:nth-child(186) {
+  --circle-color: rgb(35, 14, 42);
+}
+.grid-item:hover:nth-child(187) {
+  --circle-color: rgb(255, 58, 73);
+}
+.grid-item:hover:nth-child(188) {
+  --circle-color: rgb(227, 190, 120);
+}
+.grid-item:hover:nth-child(189) {
+  --circle-color: rgb(208, 156, 63);
+}
+.grid-item:hover:nth-child(190) {
+  --circle-color: rgb(98, 124, 200);
+}
+.grid-item:hover:nth-child(191) {
+  --circle-color: rgb(190, 40, 163);
+}
+.grid-item:hover:nth-child(192) {
+  --circle-color: rgb(34, 241, 220);
+}
+.grid-item:hover:nth-child(193) {
+  --circle-color: rgb(123, 172, 88);
+}
+.grid-item:hover:nth-child(194) {
+  --circle-color: rgb(131, 105, 222);
+}
+.grid-item:hover:nth-child(195) {
+  --circle-color: rgb(125, 244, 9);
+}
+.grid-item:hover:nth-child(196) {
+  --circle-color: rgb(62, 40, 138);
+}
+.grid-item:hover:nth-child(197) {
+  --circle-color: rgb(208, 93, 205);
+}
+.grid-item:hover:nth-child(198) {
+  --circle-color: rgb(226, 9, 241);
+}
+.grid-item:hover:nth-child(199) {
+  --circle-color: rgb(209, 8, 16);
+}
+.grid-item:hover:nth-child(200) {
+  --circle-color: rgb(176, 3, 53);
+}
+.grid-item:hover:nth-child(201) {
+  --circle-color: rgb(105, 128, 121);
+}
+.grid-item:hover:nth-child(202) {
+  --circle-color: rgb(209, 218, 81);
+}
+.grid-item:hover:nth-child(203) {
+  --circle-color: rgb(69, 114, 158);
+}
+.grid-item:hover:nth-child(204) {
+  --circle-color: rgb(211, 175, 101);
+}
+.grid-item:hover:nth-child(205) {
+  --circle-color: rgb(170, 158, 27);
+}
+.grid-item:hover:nth-child(206) {
+  --circle-color: rgb(59, 70, 203);
+}
+.grid-item:hover:nth-child(207) {
+  --circle-color: rgb(24, 105, 32);
+}
+.grid-item:hover:nth-child(208) {
+  --circle-color: rgb(60, 219, 48);
+}
+.grid-item:hover:nth-child(209) {
+  --circle-color: rgb(189, 110, 74);
+}
+.grid-item:hover:nth-child(210) {
+  --circle-color: rgb(211, 142, 129);
+}
+.grid-item:hover:nth-child(211) {
+  --circle-color: rgb(112, 143, 37);
+}
+.grid-item:hover:nth-child(212) {
+  --circle-color: rgb(131, 56, 41);
+}
+.grid-item:hover:nth-child(213) {
+  --circle-color: rgb(160, 63, 165);
+}
+.grid-item:hover:nth-child(214) {
+  --circle-color: rgb(95, 112, 251);
+}
+.grid-item:hover:nth-child(215) {
+  --circle-color: rgb(14, 237, 35);
+}
+.grid-item:hover:nth-child(216) {
+  --circle-color: rgb(52, 120, 25);
+}
+.grid-item:hover:nth-child(217) {
+  --circle-color: rgb(35, 15, 92);
+}
+.grid-item:hover:nth-child(218) {
+  --circle-color: rgb(142, 43, 172);
+}
+.grid-item:hover:nth-child(219) {
+  --circle-color: rgb(2, 52, 129);
+}
+.grid-item:hover:nth-child(220) {
+  --circle-color: rgb(231, 240, 176);
+}
+.grid-item:hover:nth-child(221) {
+  --circle-color: rgb(40, 50, 107);
+}
+.grid-item:hover:nth-child(222) {
+  --circle-color: rgb(212, 118, 30);
+}
+.grid-item:hover:nth-child(223) {
+  --circle-color: rgb(135, 208, 158);
+}
+.grid-item:hover:nth-child(224) {
+  --circle-color: rgb(123, 125, 111);
+}
+.grid-item:hover:nth-child(225) {
+  --circle-color: rgb(121, 116, 189);
+}
+.grid-item:hover:nth-child(226) {
+  --circle-color: rgb(172, 122, 35);
+}
+.grid-item:hover:nth-child(227) {
+  --circle-color: rgb(145, 214, 158);
+}
+.grid-item:hover:nth-child(228) {
+  --circle-color: rgb(209, 165, 14);
+}
+.grid-item:hover:nth-child(229) {
+  --circle-color: rgb(113, 220, 11);
+}
+.grid-item:hover:nth-child(230) {
+  --circle-color: rgb(101, 47, 162);
+}
+.grid-item:hover:nth-child(231) {
+  --circle-color: rgb(182, 61, 93);
+}
+.grid-item:hover:nth-child(232) {
+  --circle-color: rgb(145, 195, 9);
+}
+.grid-item:hover:nth-child(233) {
+  --circle-color: rgb(52, 17, 145);
+}
+.grid-item:hover:nth-child(234) {
+  --circle-color: rgb(128, 126, 47);
+}
+.grid-item:hover:nth-child(235) {
+  --circle-color: rgb(184, 78, 234);
+}
+.grid-item:hover:nth-child(236) {
+  --circle-color: rgb(53, 41, 5);
+}
+.grid-item:hover:nth-child(237) {
+  --circle-color: rgb(138, 70, 48);
+}
+.grid-item:hover:nth-child(238) {
+  --circle-color: rgb(224, 49, 69);
+}
+.grid-item:hover:nth-child(239) {
+  --circle-color: rgb(176, 38, 219);
+}
+.grid-item:hover:nth-child(240) {
+  --circle-color: rgb(110, 142, 45);
+}
+.grid-item:hover:nth-child(241) {
+  --circle-color: rgb(42, 38, 96);
+}
+.grid-item:hover:nth-child(242) {
+  --circle-color: rgb(18, 181, 233);
+}
+.grid-item:hover:nth-child(243) {
+  --circle-color: rgb(118, 71, 103);
+}
+.grid-item:hover:nth-child(244) {
+  --circle-color: rgb(39, 60, 179);
+}
+.grid-item:hover:nth-child(245) {
+  --circle-color: rgb(42, 2, 171);
+}
+.grid-item:hover:nth-child(246) {
+  --circle-color: rgb(229, 194, 59);
+}
+.grid-item:hover:nth-child(247) {
+  --circle-color: rgb(54, 166, 148);
+}
+.grid-item:hover:nth-child(248) {
+  --circle-color: rgb(25, 105, 143);
+}
+.grid-item:hover:nth-child(249) {
+  --circle-color: rgb(85, 97, 165);
+}
+.grid-item:hover:nth-child(250) {
+  --circle-color: rgb(43, 46, 200);
+}
+.grid-item:hover:nth-child(251) {
+  --circle-color: rgb(178, 49, 201);
+}
+.grid-item:hover:nth-child(252) {
+  --circle-color: rgb(216, 147, 226);
+}
+.grid-item:hover:nth-child(253) {
+  --circle-color: rgb(63, 220, 213);
+}
+.grid-item:hover:nth-child(254) {
+  --circle-color: rgb(57, 170, 234);
+}
+.grid-item:hover:nth-child(255) {
+  --circle-color: rgb(120, 26, 110);
+}
+.grid-item:hover:nth-child(256) {
+  --circle-color: rgb(247, 224, 136);
+}
+.grid-item:hover:nth-child(257) {
+  --circle-color: rgb(114, 190, 231);
+}
+.grid-item:hover:nth-child(258) {
+  --circle-color: rgb(220, 183, 225);
+}
+.grid-item:hover:nth-child(259) {
+  --circle-color: rgb(26, 86, 201);
+}
+.grid-item:hover:nth-child(260) {
+  --circle-color: rgb(198, 99, 179);
+}
+.grid-item:hover:nth-child(261) {
+  --circle-color: rgb(94, 26, 177);
+}
+.grid-item:hover:nth-child(262) {
+  --circle-color: rgb(98, 189, 72);
+}
+.grid-item:hover:nth-child(263) {
+  --circle-color: rgb(173, 131, 215);
+}
+.grid-item:hover:nth-child(264) {
+  --circle-color: rgb(204, 222, 105);
+}
+.grid-item:hover:nth-child(265) {
+  --circle-color: rgb(25, 159, 37);
+}
+.grid-item:hover:nth-child(266) {
+  --circle-color: rgb(152, 173, 47);
+}
+.grid-item:hover:nth-child(267) {
+  --circle-color: rgb(14, 217, 23);
+}
+.grid-item:hover:nth-child(268) {
+  --circle-color: rgb(203, 73, 179);
+}
+.grid-item:hover:nth-child(269) {
+  --circle-color: rgb(243, 213, 131);
+}
+.grid-item:hover:nth-child(270) {
+  --circle-color: rgb(212, 204, 215);
+}
+.grid-item:hover:nth-child(271) {
+  --circle-color: rgb(150, 179, 68);
+}
+.grid-item:hover:nth-child(272) {
+  --circle-color: rgb(68, 60, 87);
+}
+.grid-item:hover:nth-child(273) {
+  --circle-color: rgb(126, 134, 237);
+}
+.grid-item:hover:nth-child(274) {
+  --circle-color: rgb(32, 253, 3);
+}
+.grid-item:hover:nth-child(275) {
+  --circle-color: rgb(239, 247, 88);
+}
+.grid-item:hover:nth-child(276) {
+  --circle-color: rgb(181, 169, 168);
+}
+.grid-item:hover:nth-child(277) {
+  --circle-color: rgb(234, 169, 250);
+}
+.grid-item:hover:nth-child(278) {
+  --circle-color: rgb(181, 31, 38);
+}
+.grid-item:hover:nth-child(279) {
+  --circle-color: rgb(132, 222, 121);
+}
+.grid-item:hover:nth-child(280) {
+  --circle-color: rgb(221, 196, 57);
+}
+.grid-item:hover:nth-child(281) {
+  --circle-color: rgb(75, 204, 245);
+}
+.grid-item:hover:nth-child(282) {
+  --circle-color: rgb(119, 202, 15);
+}
+.grid-item:hover:nth-child(283) {
+  --circle-color: rgb(106, 94, 76);
+}
+.grid-item:hover:nth-child(284) {
+  --circle-color: rgb(151, 75, 115);
+}
+.grid-item:hover:nth-child(285) {
+  --circle-color: rgb(200, 89, 181);
+}
+.grid-item:hover:nth-child(286) {
+  --circle-color: rgb(153, 178, 230);
+}
+.grid-item:hover:nth-child(287) {
+  --circle-color: rgb(62, 211, 22);
+}
+.grid-item:hover:nth-child(288) {
+  --circle-color: rgb(253, 183, 63);
+}
+.grid-item:hover:nth-child(289) {
+  --circle-color: rgb(79, 13, 104);
+}
+.grid-item:hover:nth-child(290) {
+  --circle-color: rgb(35, 8, 193);
+}
+.grid-item:hover:nth-child(291) {
+  --circle-color: rgb(3, 15, 31);
+}
+.grid-item:hover:nth-child(292) {
+  --circle-color: rgb(219, 249, 53);
+}
+.grid-item:hover:nth-child(293) {
+  --circle-color: rgb(129, 142, 113);
+}
+.grid-item:hover:nth-child(294) {
+  --circle-color: rgb(237, 109, 113);
+}
+.grid-item:hover:nth-child(295) {
+  --circle-color: rgb(115, 136, 78);
+}
+.grid-item:hover:nth-child(296) {
+  --circle-color: rgb(226, 217, 25);
+}
+.grid-item:hover:nth-child(297) {
+  --circle-color: rgb(227, 190, 119);
+}
+.grid-item:hover:nth-child(298) {
+  --circle-color: rgb(86, 47, 207);
+}
+.grid-item:hover:nth-child(299) {
+  --circle-color: rgb(199, 170, 62);
+}
+.grid-item:hover:nth-child(300) {
+  --circle-color: rgb(101, 91, 8);
+}
+.grid-item:hover:nth-child(301) {
+  --circle-color: rgb(140, 74, 188);
+}
+.grid-item:hover:nth-child(302) {
+  --circle-color: rgb(113, 21, 70);
+}
+.grid-item:hover:nth-child(303) {
+  --circle-color: rgb(71, 178, 217);
+}
+.grid-item:hover:nth-child(304) {
+  --circle-color: rgb(14, 181, 234);
+}
+.grid-item:hover:nth-child(305) {
+  --circle-color: rgb(230, 34, 253);
+}
+.grid-item:hover:nth-child(306) {
+  --circle-color: rgb(17, 220, 60);
+}
+.grid-item:hover:nth-child(307) {
+  --circle-color: rgb(16, 248, 186);
+}
+.grid-item:hover:nth-child(308) {
+  --circle-color: rgb(167, 135, 237);
+}
+.grid-item:hover:nth-child(309) {
+  --circle-color: rgb(186, 108, 191);
+}
+.grid-item:hover:nth-child(310) {
+  --circle-color: rgb(233, 112, 188);
+}
+.grid-item:hover:nth-child(311) {
+  --circle-color: rgb(88, 30, 96);
+}
+.grid-item:hover:nth-child(312) {
+  --circle-color: rgb(127, 146, 131);
+}
+.grid-item:hover:nth-child(313) {
+  --circle-color: rgb(222, 137, 106);
+}
+.grid-item:hover:nth-child(314) {
+  --circle-color: rgb(199, 57, 35);
+}
+.grid-item:hover:nth-child(315) {
+  --circle-color: rgb(25, 131, 135);
+}
+.grid-item:hover:nth-child(316) {
+  --circle-color: rgb(57, 152, 246);
+}
+.grid-item:hover:nth-child(317) {
+  --circle-color: rgb(104, 221, 18);
+}
+.grid-item:hover:nth-child(318) {
+  --circle-color: rgb(161, 148, 228);
+}
+.grid-item:hover:nth-child(319) {
+  --circle-color: rgb(12, 117, 233);
+}
+.grid-item:hover:nth-child(320) {
+  --circle-color: rgb(158, 160, 225);
+}
+.grid-item:hover:nth-child(321) {
+  --circle-color: rgb(129, 65, 210);
+}
+.grid-item:hover:nth-child(322) {
+  --circle-color: rgb(173, 177, 192);
+}
+.grid-item:hover:nth-child(323) {
+  --circle-color: rgb(191, 85, 158);
+}
+.grid-item:hover:nth-child(324) {
+  --circle-color: rgb(140, 61, 55);
+}
+.grid-item:hover:nth-child(325) {
+  --circle-color: rgb(96, 245, 149);
+}
+.grid-item:hover:nth-child(326) {
+  --circle-color: rgb(220, 184, 165);
+}
+.grid-item:hover:nth-child(327) {
+  --circle-color: rgb(209, 83, 239);
+}
+.grid-item:hover:nth-child(328) {
+  --circle-color: rgb(67, 35, 78);
+}
+.grid-item:hover:nth-child(329) {
+  --circle-color: rgb(42, 12, 38);
+}
+.grid-item:hover:nth-child(330) {
+  --circle-color: rgb(229, 107, 64);
+}
+.grid-item:hover:nth-child(331) {
+  --circle-color: rgb(172, 249, 206);
+}
+.grid-item:hover:nth-child(332) {
+  --circle-color: rgb(107, 101, 135);
+}
+.grid-item:hover:nth-child(333) {
+  --circle-color: rgb(209, 41, 71);
+}
+.grid-item:hover:nth-child(334) {
+  --circle-color: rgb(131, 243, 60);
+}
+.grid-item:hover:nth-child(335) {
+  --circle-color: rgb(20, 175, 17);
+}
+.grid-item:hover:nth-child(336) {
+  --circle-color: rgb(242, 3, 32);
+}
+.grid-item:hover:nth-child(337) {
+  --circle-color: rgb(41, 160, 164);
+}
+.grid-item:hover:nth-child(338) {
+  --circle-color: rgb(47, 112, 248);
+}
+.grid-item:hover:nth-child(339) {
+  --circle-color: rgb(192, 244, 102);
+}
+.grid-item:hover:nth-child(340) {
+  --circle-color: rgb(16, 19, 139);
+}
+.grid-item:hover:nth-child(341) {
+  --circle-color: rgb(165, 25, 130);
+}
+.grid-item:hover:nth-child(342) {
+  --circle-color: rgb(18, 66, 181);
+}
+.grid-item:hover:nth-child(343) {
+  --circle-color: rgb(202, 63, 64);
+}
+.grid-item:hover:nth-child(344) {
+  --circle-color: rgb(110, 252, 133);
+}
+.grid-item:hover:nth-child(345) {
+  --circle-color: rgb(229, 163, 102);
+}
+.grid-item:hover:nth-child(346) {
+  --circle-color: rgb(26, 52, 123);
+}
+.grid-item:hover:nth-child(347) {
+  --circle-color: rgb(132, 240, 134);
+}
+.grid-item:hover:nth-child(348) {
+  --circle-color: rgb(98, 156, 61);
+}
+.grid-item:hover:nth-child(349) {
+  --circle-color: rgb(43, 20, 14);
+}
+.grid-item:hover:nth-child(350) {
+  --circle-color: rgb(225, 16, 204);
+}
+.grid-item:hover:nth-child(351) {
+  --circle-color: rgb(203, 63, 148);
+}
+.grid-item:hover:nth-child(352) {
+  --circle-color: rgb(10, 124, 21);
+}
+.grid-item:hover:nth-child(353) {
+  --circle-color: rgb(238, 140, 157);
+}
+.grid-item:hover:nth-child(354) {
+  --circle-color: rgb(171, 191, 229);
+}
+.grid-item:hover:nth-child(355) {
+  --circle-color: rgb(250, 21, 169);
+}
+.grid-item:hover:nth-child(356) {
+  --circle-color: rgb(61, 212, 10);
+}
+.grid-item:hover:nth-child(357) {
+  --circle-color: rgb(63, 55, 90);
+}
+.grid-item:hover:nth-child(358) {
+  --circle-color: rgb(129, 59, 191);
+}
+.grid-item:hover:nth-child(359) {
+  --circle-color: rgb(92, 96, 180);
+}
+.grid-item:hover:nth-child(360) {
+  --circle-color: rgb(173, 182, 77);
+}
+.grid-item:hover:nth-child(361) {
+  --circle-color: rgb(38, 199, 243);
+}
+.grid-item:hover:nth-child(362) {
+  --circle-color: rgb(35, 173, 69);
+}
+.grid-item:hover:nth-child(363) {
+  --circle-color: rgb(80, 151, 162);
+}
+.grid-item:hover:nth-child(364) {
+  --circle-color: rgb(131, 229, 183);
+}
+.grid-item:hover:nth-child(365) {
+  --circle-color: rgb(233, 160, 217);
+}
+.grid-item:hover:nth-child(366) {
+  --circle-color: rgb(8, 17, 114);
+}
+.grid-item:hover:nth-child(367) {
+  --circle-color: rgb(38, 215, 68);
+}
+.grid-item:hover:nth-child(368) {
+  --circle-color: rgb(205, 8, 241);
+}
+.grid-item:hover:nth-child(369) {
+  --circle-color: rgb(71, 13, 242);
+}
+.grid-item:hover:nth-child(370) {
+  --circle-color: rgb(221, 19, 66);
+}
+.grid-item:hover:nth-child(371) {
+  --circle-color: rgb(7, 250, 172);
+}
+.grid-item:hover:nth-child(372) {
+  --circle-color: rgb(86, 177, 157);
+}
+.grid-item:hover:nth-child(373) {
+  --circle-color: rgb(60, 55, 221);
+}
+.grid-item:hover:nth-child(374) {
+  --circle-color: rgb(29, 5, 10);
+}
+.grid-item:hover:nth-child(375) {
+  --circle-color: rgb(222, 210, 95);
+}
+.grid-item:hover:nth-child(376) {
+  --circle-color: rgb(235, 19, 98);
+}
+.grid-item:hover:nth-child(377) {
+  --circle-color: rgb(13, 86, 62);
+}
+.grid-item:hover:nth-child(378) {
+  --circle-color: rgb(113, 222, 74);
+}
+.grid-item:hover:nth-child(379) {
+  --circle-color: rgb(243, 44, 169);
+}
+.grid-item:hover:nth-child(380) {
+  --circle-color: rgb(132, 228, 80);
+}
+.grid-item:hover:nth-child(381) {
+  --circle-color: rgb(199, 130, 217);
+}
+.grid-item:hover:nth-child(382) {
+  --circle-color: rgb(96, 138, 36);
+}
+.grid-item:hover:nth-child(383) {
+  --circle-color: rgb(170, 23, 233);
+}
+.grid-item:hover:nth-child(384) {
+  --circle-color: rgb(42, 168, 159);
+}
+.grid-item:hover:nth-child(385) {
+  --circle-color: rgb(72, 95, 101);
+}
+.grid-item:hover:nth-child(386) {
+  --circle-color: rgb(62, 152, 171);
+}
+.grid-item:hover:nth-child(387) {
+  --circle-color: rgb(130, 234, 228);
+}
+.grid-item:hover:nth-child(388) {
+  --circle-color: rgb(115, 96, 165);
+}
+.grid-item:hover:nth-child(389) {
+  --circle-color: rgb(4, 249, 74);
+}
+.grid-item:hover:nth-child(390) {
+  --circle-color: rgb(165, 31, 204);
+}
+.grid-item:hover:nth-child(391) {
+  --circle-color: rgb(128, 103, 163);
+}
+.grid-item:hover:nth-child(392) {
+  --circle-color: rgb(112, 116, 88);
+}
+.grid-item:hover:nth-child(393) {
+  --circle-color: rgb(158, 238, 5);
+}
+.grid-item:hover:nth-child(394) {
+  --circle-color: rgb(86, 220, 254);
+}
+.grid-item:hover:nth-child(395) {
+  --circle-color: rgb(42, 224, 165);
+}
+.grid-item:hover:nth-child(396) {
+  --circle-color: rgb(66, 180, 48);
+}
+.grid-item:hover:nth-child(397) {
+  --circle-color: rgb(173, 185, 66);
+}
+.grid-item:hover:nth-child(398) {
+  --circle-color: rgb(163, 29, 241);
+}
+.grid-item:hover:nth-child(399) {
+  --circle-color: rgb(244, 78, 134);
+}
+.grid-item:hover:nth-child(400) {
+  --circle-color: rgb(91, 218, 90);
+}
+.grid-item:hover:nth-child(401) {
+  --circle-color: rgb(62, 95, 127);
+}
+.grid-item:hover:nth-child(402) {
+  --circle-color: rgb(42, 131, 89);
+}
+.grid-item:hover:nth-child(403) {
+  --circle-color: rgb(25, 89, 6);
+}
+.grid-item:hover:nth-child(404) {
+  --circle-color: rgb(119, 7, 246);
+}
+.grid-item:hover:nth-child(405) {
+  --circle-color: rgb(24, 83, 8);
+}
+.grid-item:hover:nth-child(406) {
+  --circle-color: rgb(11, 242, 45);
+}
+.grid-item:hover:nth-child(407) {
+  --circle-color: rgb(34, 251, 185);
+}
+.grid-item:hover:nth-child(408) {
+  --circle-color: rgb(43, 48, 56);
+}
+.grid-item:hover:nth-child(409) {
+  --circle-color: rgb(50, 205, 70);
+}
+.grid-item:hover:nth-child(410) {
+  --circle-color: rgb(220, 218, 191);
+}
+.grid-item:hover:nth-child(411) {
+  --circle-color: rgb(119, 162, 78);
+}
+.grid-item:hover:nth-child(412) {
+  --circle-color: rgb(164, 220, 68);
+}
+.grid-item:hover:nth-child(413) {
+  --circle-color: rgb(30, 59, 103);
+}
+.grid-item:hover:nth-child(414) {
+  --circle-color: rgb(193, 91, 5);
+}
+.grid-item:hover:nth-child(415) {
+  --circle-color: rgb(83, 12, 109);
+}
+.grid-item:hover:nth-child(416) {
+  --circle-color: rgb(137, 32, 105);
+}
+.grid-item:hover:nth-child(417) {
+  --circle-color: rgb(101, 201, 231);
+}
+.grid-item:hover:nth-child(418) {
+  --circle-color: rgb(92, 241, 151);
+}
+.grid-item:hover:nth-child(419) {
+  --circle-color: rgb(95, 59, 121);
+}
+.grid-item:hover:nth-child(420) {
+  --circle-color: rgb(74, 184, 232);
+}
+.grid-item:hover:nth-child(421) {
+  --circle-color: rgb(95, 87, 86);
+}
+.grid-item:hover:nth-child(422) {
+  --circle-color: rgb(32, 208, 102);
+}
+.grid-item:hover:nth-child(423) {
+  --circle-color: rgb(109, 56, 125);
+}
+.grid-item:hover:nth-child(424) {
+  --circle-color: rgb(138, 96, 126);
+}
+.grid-item:hover:nth-child(425) {
+  --circle-color: rgb(243, 233, 198);
+}
+.grid-item:hover:nth-child(426) {
+  --circle-color: rgb(154, 231, 32);
+}
+.grid-item:hover:nth-child(427) {
+  --circle-color: rgb(173, 236, 77);
+}
+.grid-item:hover:nth-child(428) {
+  --circle-color: rgb(115, 230, 10);
+}
+.grid-item:hover:nth-child(429) {
+  --circle-color: rgb(29, 10, 245);
+}
+.grid-item:hover:nth-child(430) {
+  --circle-color: rgb(245, 103, 12);
+}
+.grid-item:hover:nth-child(431) {
+  --circle-color: rgb(252, 164, 69);
+}
+.grid-item:hover:nth-child(432) {
+  --circle-color: rgb(117, 115, 174);
+}
+.grid-item:hover:nth-child(433) {
+  --circle-color: rgb(3, 141, 2);
+}
+.grid-item:hover:nth-child(434) {
+  --circle-color: rgb(58, 190, 236);
+}
+.grid-item:hover:nth-child(435) {
+  --circle-color: rgb(242, 44, 125);
+}
+.grid-item:hover:nth-child(436) {
+  --circle-color: rgb(167, 72, 83);
+}
+.grid-item:hover:nth-child(437) {
+  --circle-color: rgb(46, 92, 97);
+}
+.grid-item:hover:nth-child(438) {
+  --circle-color: rgb(161, 40, 63);
+}
+.grid-item:hover:nth-child(439) {
+  --circle-color: rgb(163, 180, 18);
+}
+.grid-item:hover:nth-child(440) {
+  --circle-color: rgb(38, 167, 204);
+}
+.grid-item:hover:nth-child(441) {
+  --circle-color: rgb(255, 37, 30);
+}
+.grid-item:hover:nth-child(442) {
+  --circle-color: rgb(161, 229, 88);
+}
+.grid-item:hover:nth-child(443) {
+  --circle-color: rgb(98, 222, 116);
+}
+.grid-item:hover:nth-child(444) {
+  --circle-color: rgb(20, 101, 199);
+}
+.grid-item:hover:nth-child(445) {
+  --circle-color: rgb(51, 85, 88);
+}
+.grid-item:hover:nth-child(446) {
+  --circle-color: rgb(64, 169, 136);
+}
+.grid-item:hover:nth-child(447) {
+  --circle-color: rgb(43, 52, 74);
+}
+.grid-item:hover:nth-child(448) {
+  --circle-color: rgb(175, 88, 90);
+}
+.grid-item:hover:nth-child(449) {
+  --circle-color: rgb(244, 136, 95);
+}
+.grid-item:hover:nth-child(450) {
+  --circle-color: rgb(238, 88, 145);
+}
+.grid-item:hover:nth-child(451) {
+  --circle-color: rgb(247, 136, 141);
+}
+.grid-item:hover:nth-child(452) {
+  --circle-color: rgb(182, 110, 8);
+}
+.grid-item:hover:nth-child(453) {
+  --circle-color: rgb(90, 142, 176);
+}
+.grid-item:hover:nth-child(454) {
+  --circle-color: rgb(144, 41, 92);
+}
+.grid-item:hover:nth-child(455) {
+  --circle-color: rgb(245, 241, 112);
+}
+.grid-item:hover:nth-child(456) {
+  --circle-color: rgb(5, 187, 206);
+}
+.grid-item:hover:nth-child(457) {
+  --circle-color: rgb(30, 22, 104);
+}
+.grid-item:hover:nth-child(458) {
+  --circle-color: rgb(78, 80, 189);
+}
+.grid-item:hover:nth-child(459) {
+  --circle-color: rgb(105, 142, 137);
+}
+.grid-item:hover:nth-child(460) {
+  --circle-color: rgb(246, 198, 252);
+}
+.grid-item:hover:nth-child(461) {
+  --circle-color: rgb(125, 13, 63);
+}
+.grid-item:hover:nth-child(462) {
+  --circle-color: rgb(143, 182, 178);
+}
+.grid-item:hover:nth-child(463) {
+  --circle-color: rgb(165, 169, 149);
+}
+.grid-item:hover:nth-child(464) {
+  --circle-color: rgb(101, 46, 197);
+}
+.grid-item:hover:nth-child(465) {
+  --circle-color: rgb(92, 176, 176);
+}
+.grid-item:hover:nth-child(466) {
+  --circle-color: rgb(154, 178, 41);
+}
+.grid-item:hover:nth-child(467) {
+  --circle-color: rgb(233, 83, 184);
+}
+.grid-item:hover:nth-child(468) {
+  --circle-color: rgb(225, 171, 199);
+}
+.grid-item:hover:nth-child(469) {
+  --circle-color: rgb(245, 53, 90);
+}
+.grid-item:hover:nth-child(470) {
+  --circle-color: rgb(152, 178, 60);
+}
+.grid-item:hover:nth-child(471) {
+  --circle-color: rgb(110, 234, 3);
+}
+.grid-item:hover:nth-child(472) {
+  --circle-color: rgb(170, 241, 80);
+}
+.grid-item:hover:nth-child(473) {
+  --circle-color: rgb(93, 107, 255);
+}
+.grid-item:hover:nth-child(474) {
+  --circle-color: rgb(115, 96, 6);
+}
+.grid-item:hover:nth-child(475) {
+  --circle-color: rgb(135, 74, 229);
+}
+.grid-item:hover:nth-child(476) {
+  --circle-color: rgb(107, 75, 45);
+}
+.grid-item:hover:nth-child(477) {
+  --circle-color: rgb(201, 146, 143);
+}
+.grid-item:hover:nth-child(478) {
+  --circle-color: rgb(164, 210, 192);
+}
+.grid-item:hover:nth-child(479) {
+  --circle-color: rgb(224, 209, 168);
+}
+.grid-item:hover:nth-child(480) {
+  --circle-color: rgb(229, 238, 30);
+}
+.grid-item:hover:nth-child(481) {
+  --circle-color: rgb(15, 186, 174);
+}
+.grid-item:hover:nth-child(482) {
+  --circle-color: rgb(24, 153, 25);
+}
+.grid-item:hover:nth-child(483) {
+  --circle-color: rgb(255, 53, 101);
+}
+.grid-item:hover:nth-child(484) {
+  --circle-color: rgb(64, 13, 122);
+}
+.grid-item:hover:nth-child(485) {
+  --circle-color: rgb(64, 136, 235);
+}
+.grid-item:hover:nth-child(486) {
+  --circle-color: rgb(180, 61, 61);
+}
+.grid-item:hover:nth-child(487) {
+  --circle-color: rgb(30, 25, 229);
+}
+.grid-item:hover:nth-child(488) {
+  --circle-color: rgb(153, 189, 129);
+}
+.grid-item:hover:nth-child(489) {
+  --circle-color: rgb(74, 149, 87);
+}
+.grid-item:hover:nth-child(490) {
+  --circle-color: rgb(105, 39, 237);
+}
+.grid-item:hover:nth-child(491) {
+  --circle-color: rgb(3, 215, 44);
+}
+.grid-item:hover:nth-child(492) {
+  --circle-color: rgb(151, 241, 198);
+}
+.grid-item:hover:nth-child(493) {
+  --circle-color: rgb(120, 36, 177);
+}
+.grid-item:hover:nth-child(494) {
+  --circle-color: rgb(45, 26, 215);
+}
+.grid-item:hover:nth-child(495) {
+  --circle-color: rgb(181, 57, 13);
+}
+.grid-item:hover:nth-child(496) {
+  --circle-color: rgb(208, 140, 203);
+}
+.grid-item:hover:nth-child(497) {
+  --circle-color: rgb(103, 127, 83);
+}
+.grid-item:hover:nth-child(498) {
+  --circle-color: rgb(19, 71, 244);
+}
+.grid-item:hover:nth-child(499) {
+  --circle-color: rgb(22, 81, 72);
+}
+.grid-item:hover:nth-child(500) {
+  --circle-color: rgb(184, 74, 213);
+}
+.grid-item:hover:nth-child(501) {
+  --circle-color: rgb(21, 3, 33);
+}
+.grid-item:hover:nth-child(502) {
+  --circle-color: rgb(207, 177, 98);
+}
+.grid-item:hover:nth-child(503) {
+  --circle-color: rgb(22, 60, 140);
+}
+.grid-item:hover:nth-child(504) {
+  --circle-color: rgb(19, 234, 186);
+}
+.grid-item:hover:nth-child(505) {
+  --circle-color: rgb(250, 84, 197);
+}
+.grid-item:hover:nth-child(506) {
+  --circle-color: rgb(226, 14, 254);
+}
+.grid-item:hover:nth-child(507) {
+  --circle-color: rgb(61, 122, 23);
+}
+.grid-item:hover:nth-child(508) {
+  --circle-color: rgb(195, 192, 125);
+}
+.grid-item:hover:nth-child(509) {
+  --circle-color: rgb(8, 206, 49);
+}
+.grid-item:hover:nth-child(510) {
+  --circle-color: rgb(8, 241, 148);
+}
+.grid-item:hover:nth-child(511) {
+  --circle-color: rgb(2, 180, 136);
+}
+.grid-item:hover:nth-child(512) {
+  --circle-color: rgb(78, 54, 19);
+}
+.grid-item:hover:nth-child(513) {
+  --circle-color: rgb(79, 96, 42);
+}
+.grid-item:hover:nth-child(514) {
+  --circle-color: rgb(183, 25, 107);
+}
+.grid-item:hover:nth-child(515) {
+  --circle-color: rgb(142, 134, 136);
+}
+.grid-item:hover:nth-child(516) {
+  --circle-color: rgb(109, 103, 254);
+}
+.grid-item:hover:nth-child(517) {
+  --circle-color: rgb(29, 83, 207);
+}
+.grid-item:hover:nth-child(518) {
+  --circle-color: rgb(32, 14, 234);
+}
+.grid-item:hover:nth-child(519) {
+  --circle-color: rgb(152, 233, 79);
+}
+.grid-item:hover:nth-child(520) {
+  --circle-color: rgb(193, 142, 77);
+}
+.grid-item:hover:nth-child(521) {
+  --circle-color: rgb(191, 222, 183);
+}
+.grid-item:hover:nth-child(522) {
+  --circle-color: rgb(2, 148, 180);
+}
+.grid-item:hover:nth-child(523) {
+  --circle-color: rgb(204, 44, 129);
+}
+.grid-item:hover:nth-child(524) {
+  --circle-color: rgb(17, 150, 112);
+}
+.grid-item:hover:nth-child(525) {
+  --circle-color: rgb(41, 184, 99);
+}
+.grid-item:hover:nth-child(526) {
+  --circle-color: rgb(58, 67, 146);
+}
+.grid-item:hover:nth-child(527) {
+  --circle-color: rgb(37, 226, 73);
+}
+.grid-item:hover:nth-child(528) {
+  --circle-color: rgb(145, 10, 153);
+}
+.grid-item:hover:nth-child(529) {
+  --circle-color: rgb(136, 147, 59);
+}
+.grid-item:hover:nth-child(530) {
+  --circle-color: rgb(57, 249, 249);
+}
+.grid-item:hover:nth-child(531) {
+  --circle-color: rgb(165, 118, 37);
+}
+.grid-item:hover:nth-child(532) {
+  --circle-color: rgb(155, 68, 40);
+}
+.grid-item:hover:nth-child(533) {
+  --circle-color: rgb(126, 228, 45);
+}
+.grid-item:hover:nth-child(534) {
+  --circle-color: rgb(131, 235, 254);
+}
+.grid-item:hover:nth-child(535) {
+  --circle-color: rgb(25, 178, 24);
+}
+.grid-item:hover:nth-child(536) {
+  --circle-color: rgb(147, 246, 225);
+}
+.grid-item:hover:nth-child(537) {
+  --circle-color: rgb(200, 224, 22);
+}
+.grid-item:hover:nth-child(538) {
+  --circle-color: rgb(159, 2, 124);
+}
+.grid-item:hover:nth-child(539) {
+  --circle-color: rgb(61, 91, 94);
+}
+.grid-item:hover:nth-child(540) {
+  --circle-color: rgb(120, 35, 131);
+}
+.grid-item:hover:nth-child(541) {
+  --circle-color: rgb(204, 32, 8);
+}
+.grid-item:hover:nth-child(542) {
+  --circle-color: rgb(16, 44, 59);
+}
+.grid-item:hover:nth-child(543) {
+  --circle-color: rgb(208, 19, 59);
+}
+.grid-item:hover:nth-child(544) {
+  --circle-color: rgb(104, 141, 53);
+}
+.grid-item:hover:nth-child(545) {
+  --circle-color: rgb(145, 4, 80);
+}
+.grid-item:hover:nth-child(546) {
+  --circle-color: rgb(130, 36, 174);
+}
+.grid-item:hover:nth-child(547) {
+  --circle-color: rgb(249, 111, 50);
+}
+.grid-item:hover:nth-child(548) {
+  --circle-color: rgb(40, 57, 194);
+}
+.grid-item:hover:nth-child(549) {
+  --circle-color: rgb(103, 244, 180);
+}
+.grid-item:hover:nth-child(550) {
+  --circle-color: rgb(252, 127, 152);
+}
+.grid-item:hover:nth-child(551) {
+  --circle-color: rgb(12, 73, 234);
+}
+.grid-item:hover:nth-child(552) {
+  --circle-color: rgb(55, 114, 198);
+}
+.grid-item:hover:nth-child(553) {
+  --circle-color: rgb(20, 123, 176);
+}
+.grid-item:hover:nth-child(554) {
+  --circle-color: rgb(7, 86, 100);
+}
+.grid-item:hover:nth-child(555) {
+  --circle-color: rgb(95, 27, 241);
+}
+.grid-item:hover:nth-child(556) {
+  --circle-color: rgb(204, 53, 99);
+}
+.grid-item:hover:nth-child(557) {
+  --circle-color: rgb(177, 3, 180);
+}
+.grid-item:hover:nth-child(558) {
+  --circle-color: rgb(87, 87, 26);
+}
+.grid-item:hover:nth-child(559) {
+  --circle-color: rgb(171, 159, 108);
+}
+.grid-item:hover:nth-child(560) {
+  --circle-color: rgb(37, 136, 243);
+}
+.grid-item:hover:nth-child(561) {
+  --circle-color: rgb(9, 253, 47);
+}
+.grid-item:hover:nth-child(562) {
+  --circle-color: rgb(155, 84, 98);
+}
+.grid-item:hover:nth-child(563) {
+  --circle-color: rgb(88, 99, 246);
+}
+.grid-item:hover:nth-child(564) {
+  --circle-color: rgb(200, 85, 24);
+}
+.grid-item:hover:nth-child(565) {
+  --circle-color: rgb(58, 81, 63);
+}
+.grid-item:hover:nth-child(566) {
+  --circle-color: rgb(161, 33, 206);
+}
+.grid-item:hover:nth-child(567) {
+  --circle-color: rgb(60, 9, 13);
+}
+.grid-item:hover:nth-child(568) {
+  --circle-color: rgb(74, 125, 25);
+}
+.grid-item:hover:nth-child(569) {
+  --circle-color: rgb(237, 192, 68);
+}
+.grid-item:hover:nth-child(570) {
+  --circle-color: rgb(9, 160, 152);
+}
+.grid-item:hover:nth-child(571) {
+  --circle-color: rgb(146, 157, 214);
+}
+.grid-item:hover:nth-child(572) {
+  --circle-color: rgb(245, 254, 70);
+}
+.grid-item:hover:nth-child(573) {
+  --circle-color: rgb(169, 186, 144);
+}
+.grid-item:hover:nth-child(574) {
+  --circle-color: rgb(245, 199, 168);
+}
+.grid-item:hover:nth-child(575) {
+  --circle-color: rgb(118, 95, 227);
+}
+.grid-item:hover:nth-child(576) {
+  --circle-color: rgb(187, 8, 187);
+}
+.grid-item:hover:nth-child(577) {
+  --circle-color: rgb(58, 128, 7);
+}
+.grid-item:hover:nth-child(578) {
+  --circle-color: rgb(94, 250, 124);
+}
+.grid-item:hover:nth-child(579) {
+  --circle-color: rgb(66, 252, 163);
+}
+.grid-item:hover:nth-child(580) {
+  --circle-color: rgb(177, 94, 82);
+}
+.grid-item:hover:nth-child(581) {
+  --circle-color: rgb(25, 120, 50);
+}
+.grid-item:hover:nth-child(582) {
+  --circle-color: rgb(169, 236, 91);
+}
+.grid-item:hover:nth-child(583) {
+  --circle-color: rgb(41, 245, 56);
+}
+.grid-item:hover:nth-child(584) {
+  --circle-color: rgb(231, 49, 69);
+}
+.grid-item:hover:nth-child(585) {
+  --circle-color: rgb(171, 212, 18);
+}
+.grid-item:hover:nth-child(586) {
+  --circle-color: rgb(253, 76, 119);
+}
+.grid-item:hover:nth-child(587) {
+  --circle-color: rgb(79, 88, 38);
+}
+.grid-item:hover:nth-child(588) {
+  --circle-color: rgb(62, 89, 20);
+}
+.grid-item:hover:nth-child(589) {
+  --circle-color: rgb(97, 111, 112);
+}
+.grid-item:hover:nth-child(590) {
+  --circle-color: rgb(94, 233, 221);
+}
+.grid-item:hover:nth-child(591) {
+  --circle-color: rgb(248, 27, 210);
+}
+.grid-item:hover:nth-child(592) {
+  --circle-color: rgb(62, 52, 108);
+}
+.grid-item:hover:nth-child(593) {
+  --circle-color: rgb(132, 136, 165);
+}
+.grid-item:hover:nth-child(594) {
+  --circle-color: rgb(5, 101, 21);
+}
+.grid-item:hover:nth-child(595) {
+  --circle-color: rgb(124, 40, 16);
+}
+.grid-item:hover:nth-child(596) {
+  --circle-color: rgb(251, 98, 226);
+}
+.grid-item:hover:nth-child(597) {
+  --circle-color: rgb(137, 134, 121);
+}
+.grid-item:hover:nth-child(598) {
+  --circle-color: rgb(191, 53, 112);
+}
+.grid-item:hover:nth-child(599) {
+  --circle-color: rgb(142, 98, 249);
+}
+.grid-item:hover:nth-child(600) {
+  --circle-color: rgb(175, 49, 150);
+}
+.grid-item:hover:nth-child(601) {
+  --circle-color: rgb(150, 181, 128);
+}
+.grid-item:hover:nth-child(602) {
+  --circle-color: rgb(119, 113, 226);
+}
+.grid-item:hover:nth-child(603) {
+  --circle-color: rgb(244, 254, 109);
+}
+.grid-item:hover:nth-child(604) {
+  --circle-color: rgb(152, 70, 164);
+}
+.grid-item:hover:nth-child(605) {
+  --circle-color: rgb(239, 183, 193);
+}
+.grid-item:hover:nth-child(606) {
+  --circle-color: rgb(6, 209, 246);
+}
+.grid-item:hover:nth-child(607) {
+  --circle-color: rgb(182, 116, 206);
+}
+.grid-item:hover:nth-child(608) {
+  --circle-color: rgb(130, 203, 57);
+}
+.grid-item:hover:nth-child(609) {
+  --circle-color: rgb(236, 180, 201);
+}
+.grid-item:hover:nth-child(610) {
+  --circle-color: rgb(41, 26, 134);
+}
+.grid-item:hover:nth-child(611) {
+  --circle-color: rgb(65, 236, 221);
+}
+.grid-item:hover:nth-child(612) {
+  --circle-color: rgb(63, 64, 28);
+}
+.grid-item:hover:nth-child(613) {
+  --circle-color: rgb(218, 252, 174);
+}
+.grid-item:hover:nth-child(614) {
+  --circle-color: rgb(16, 240, 212);
+}
+.grid-item:hover:nth-child(615) {
+  --circle-color: rgb(236, 153, 232);
+}
+.grid-item:hover:nth-child(616) {
+  --circle-color: rgb(195, 213, 78);
+}
+.grid-item:hover:nth-child(617) {
+  --circle-color: rgb(28, 206, 23);
+}
+.grid-item:hover:nth-child(618) {
+  --circle-color: rgb(157, 203, 137);
+}
+.grid-item:hover:nth-child(619) {
+  --circle-color: rgb(73, 99, 182);
+}
+.grid-item:hover:nth-child(620) {
+  --circle-color: rgb(9, 193, 196);
+}
+.grid-item:hover:nth-child(621) {
+  --circle-color: rgb(176, 207, 194);
+}
+.grid-item:hover:nth-child(622) {
+  --circle-color: rgb(132, 255, 207);
+}
+.grid-item:hover:nth-child(623) {
+  --circle-color: rgb(175, 152, 204);
+}
+.grid-item:hover:nth-child(624) {
+  --circle-color: rgb(177, 39, 192);
+}
+.grid-item:hover:nth-child(625) {
+  --circle-color: rgb(178, 186, 201);
+}
+.grid-item:hover:nth-child(626) {
+  --circle-color: rgb(55, 207, 228);
+}
+.grid-item:hover:nth-child(627) {
+  --circle-color: rgb(199, 25, 96);
+}
+.grid-item:hover:nth-child(628) {
+  --circle-color: rgb(181, 187, 2);
+}
+.grid-item:hover:nth-child(629) {
+  --circle-color: rgb(253, 68, 193);
+}
+.grid-item:hover:nth-child(630) {
+  --circle-color: rgb(208, 108, 13);
+}
+.grid-item:hover:nth-child(631) {
+  --circle-color: rgb(192, 17, 58);
+}
+.grid-item:hover:nth-child(632) {
+  --circle-color: rgb(112, 189, 129);
+}
+.grid-item:hover:nth-child(633) {
+  --circle-color: rgb(203, 164, 35);
+}
+.grid-item:hover:nth-child(634) {
+  --circle-color: rgb(152, 246, 58);
+}
+.grid-item:hover:nth-child(635) {
+  --circle-color: rgb(90, 220, 56);
+}
+.grid-item:hover:nth-child(636) {
+  --circle-color: rgb(6, 222, 77);
+}
+.grid-item:hover:nth-child(637) {
+  --circle-color: rgb(113, 241, 220);
+}
+.grid-item:hover:nth-child(638) {
+  --circle-color: rgb(80, 96, 111);
+}
+.grid-item:hover:nth-child(639) {
+  --circle-color: rgb(52, 84, 176);
+}
+.grid-item:hover:nth-child(640) {
+  --circle-color: rgb(102, 59, 25);
+}
+.grid-item:hover:nth-child(641) {
+  --circle-color: rgb(247, 154, 204);
+}
+.grid-item:hover:nth-child(642) {
+  --circle-color: rgb(56, 108, 165);
+}
+.grid-item:hover:nth-child(643) {
+  --circle-color: rgb(70, 110, 126);
+}
+.grid-item:hover:nth-child(644) {
+  --circle-color: rgb(123, 114, 146);
+}
+.grid-item:hover:nth-child(645) {
+  --circle-color: rgb(185, 182, 133);
+}
+.grid-item:hover:nth-child(646) {
+  --circle-color: rgb(74, 1, 87);
+}
+.grid-item:hover:nth-child(647) {
+  --circle-color: rgb(181, 150, 252);
+}
+.grid-item:hover:nth-child(648) {
+  --circle-color: rgb(4, 232, 87);
+}
+.grid-item:hover:nth-child(649) {
+  --circle-color: rgb(131, 218, 155);
+}
+.grid-item:hover:nth-child(650) {
+  --circle-color: rgb(38, 246, 122);
+}
+.grid-item:hover:nth-child(651) {
+  --circle-color: rgb(5, 228, 79);
+}
+.grid-item:hover:nth-child(652) {
+  --circle-color: rgb(225, 66, 128);
+}
+.grid-item:hover:nth-child(653) {
+  --circle-color: rgb(182, 136, 164);
+}
+.grid-item:hover:nth-child(654) {
+  --circle-color: rgb(99, 42, 206);
+}
+.grid-item:hover:nth-child(655) {
+  --circle-color: rgb(203, 41, 160);
+}
+.grid-item:hover:nth-child(656) {
+  --circle-color: rgb(4, 132, 217);
+}
+.grid-item:hover:nth-child(657) {
+  --circle-color: rgb(174, 11, 66);
+}
+.grid-item:hover:nth-child(658) {
+  --circle-color: rgb(88, 200, 11);
+}
+.grid-item:hover:nth-child(659) {
+  --circle-color: rgb(102, 46, 151);
+}
+.grid-item:hover:nth-child(660) {
+  --circle-color: rgb(80, 237, 154);
+}
+.grid-item:hover:nth-child(661) {
+  --circle-color: rgb(9, 26, 15);
+}
+.grid-item:hover:nth-child(662) {
+  --circle-color: rgb(40, 78, 108);
+}
+.grid-item:hover:nth-child(663) {
+  --circle-color: rgb(87, 87, 164);
+}
+.grid-item:hover:nth-child(664) {
+  --circle-color: rgb(175, 101, 251);
+}
+.grid-item:hover:nth-child(665) {
+  --circle-color: rgb(117, 36, 131);
+}
+.grid-item:hover:nth-child(666) {
+  --circle-color: rgb(180, 38, 231);
+}
+.grid-item:hover:nth-child(667) {
+  --circle-color: rgb(129, 181, 47);
+}
+.grid-item:hover:nth-child(668) {
+  --circle-color: rgb(3, 143, 160);
+}
+.grid-item:hover:nth-child(669) {
+  --circle-color: rgb(60, 193, 140);
+}
+.grid-item:hover:nth-child(670) {
+  --circle-color: rgb(140, 232, 32);
+}
+.grid-item:hover:nth-child(671) {
+  --circle-color: rgb(9, 88, 114);
+}
+.grid-item:hover:nth-child(672) {
+  --circle-color: rgb(49, 84, 179);
+}
+.grid-item:hover:nth-child(673) {
+  --circle-color: rgb(150, 8, 29);
+}
+.grid-item:hover:nth-child(674) {
+  --circle-color: rgb(39, 144, 179);
+}
+.grid-item:hover:nth-child(675) {
+  --circle-color: rgb(2, 239, 118);
+}
+.grid-item:hover:nth-child(676) {
+  --circle-color: rgb(34, 77, 24);
+}
+.grid-item:hover:nth-child(677) {
+  --circle-color: rgb(159, 34, 242);
+}
+.grid-item:hover:nth-child(678) {
+  --circle-color: rgb(69, 106, 213);
+}
+.grid-item:hover:nth-child(679) {
+  --circle-color: rgb(246, 166, 201);
+}
+.grid-item:hover:nth-child(680) {
+  --circle-color: rgb(221, 223, 85);
+}
+.grid-item:hover:nth-child(681) {
+  --circle-color: rgb(66, 250, 11);
+}
+.grid-item:hover:nth-child(682) {
+  --circle-color: rgb(172, 105, 103);
+}
+.grid-item:hover:nth-child(683) {
+  --circle-color: rgb(82, 176, 39);
+}
+.grid-item:hover:nth-child(684) {
+  --circle-color: rgb(174, 127, 179);
+}
+.grid-item:hover:nth-child(685) {
+  --circle-color: rgb(228, 146, 211);
+}
+.grid-item:hover:nth-child(686) {
+  --circle-color: rgb(94, 220, 179);
+}
+.grid-item:hover:nth-child(687) {
+  --circle-color: rgb(191, 83, 79);
+}
+.grid-item:hover:nth-child(688) {
+  --circle-color: rgb(129, 156, 142);
+}
+.grid-item:hover:nth-child(689) {
+  --circle-color: rgb(101, 173, 47);
+}
+.grid-item:hover:nth-child(690) {
+  --circle-color: rgb(151, 153, 171);
+}
+.grid-item:hover:nth-child(691) {
+  --circle-color: rgb(182, 67, 190);
+}
+.grid-item:hover:nth-child(692) {
+  --circle-color: rgb(71, 41, 174);
+}
+.grid-item:hover:nth-child(693) {
+  --circle-color: rgb(79, 162, 187);
+}
+.grid-item:hover:nth-child(694) {
+  --circle-color: rgb(54, 18, 90);
+}
+.grid-item:hover:nth-child(695) {
+  --circle-color: rgb(91, 248, 131);
+}
+.grid-item:hover:nth-child(696) {
+  --circle-color: rgb(93, 191, 157);
+}
+.grid-item:hover:nth-child(697) {
+  --circle-color: rgb(202, 110, 154);
+}
+.grid-item:hover:nth-child(698) {
+  --circle-color: rgb(220, 79, 50);
+}
+.grid-item:hover:nth-child(699) {
+  --circle-color: rgb(217, 225, 151);
+}
+.grid-item:hover:nth-child(700) {
+  --circle-color: rgb(149, 133, 155);
+}
+.grid-item:hover:nth-child(701) {
+  --circle-color: rgb(143, 200, 214);
+}
+.grid-item:hover:nth-child(702) {
+  --circle-color: rgb(52, 206, 63);
+}
+.grid-item:hover:nth-child(703) {
+  --circle-color: rgb(219, 45, 221);
+}
+.grid-item:hover:nth-child(704) {
+  --circle-color: rgb(161, 253, 178);
+}
+.grid-item:hover:nth-child(705) {
+  --circle-color: rgb(160, 20, 115);
+}
+.grid-item:hover:nth-child(706) {
+  --circle-color: rgb(76, 208, 128);
+}
+.grid-item:hover:nth-child(707) {
+  --circle-color: rgb(174, 183, 148);
+}
+.grid-item:hover:nth-child(708) {
+  --circle-color: rgb(241, 126, 67);
+}
+.grid-item:hover:nth-child(709) {
+  --circle-color: rgb(112, 206, 156);
+}
+.grid-item:hover:nth-child(710) {
+  --circle-color: rgb(242, 7, 225);
+}
+.grid-item:hover:nth-child(711) {
+  --circle-color: rgb(50, 22, 112);
+}
+.grid-item:hover:nth-child(712) {
+  --circle-color: rgb(188, 47, 140);
+}
+.grid-item:hover:nth-child(713) {
+  --circle-color: rgb(128, 43, 63);
+}
+.grid-item:hover:nth-child(714) {
+  --circle-color: rgb(252, 220, 221);
+}
+.grid-item:hover:nth-child(715) {
+  --circle-color: rgb(179, 95, 139);
+}
+.grid-item:hover:nth-child(716) {
+  --circle-color: rgb(25, 132, 144);
+}
+.grid-item:hover:nth-child(717) {
+  --circle-color: rgb(53, 159, 119);
+}
+.grid-item:hover:nth-child(718) {
+  --circle-color: rgb(15, 145, 179);
+}
+.grid-item:hover:nth-child(719) {
+  --circle-color: rgb(182, 118, 90);
+}
+.grid-item:hover:nth-child(720) {
+  --circle-color: rgb(230, 237, 165);
+}
+.grid-item:hover:nth-child(721) {
+  --circle-color: rgb(60, 215, 86);
+}
+.grid-item:hover:nth-child(722) {
+  --circle-color: rgb(139, 245, 17);
+}
+.grid-item:hover:nth-child(723) {
+  --circle-color: rgb(180, 132, 176);
+}
+.grid-item:hover:nth-child(724) {
+  --circle-color: rgb(242, 191, 95);
+}
+.grid-item:hover:nth-child(725) {
+  --circle-color: rgb(115, 6, 106);
+}
+.grid-item:hover:nth-child(726) {
+  --circle-color: rgb(68, 91, 229);
+}
+.grid-item:hover:nth-child(727) {
+  --circle-color: rgb(171, 185, 181);
+}
+.grid-item:hover:nth-child(728) {
+  --circle-color: rgb(117, 197, 238);
+}
+.grid-item:hover:nth-child(729) {
+  --circle-color: rgb(103, 101, 109);
+}
+.grid-item:hover:nth-child(730) {
+  --circle-color: rgb(252, 233, 138);
+}
+.grid-item:hover:nth-child(731) {
+  --circle-color: rgb(67, 29, 246);
+}
+.grid-item:hover:nth-child(732) {
+  --circle-color: rgb(35, 20, 144);
+}
+.grid-item:hover:nth-child(733) {
+  --circle-color: rgb(87, 233, 148);
+}
+.grid-item:hover:nth-child(734) {
+  --circle-color: rgb(23, 16, 126);
+}
+.grid-item:hover:nth-child(735) {
+  --circle-color: rgb(213, 155, 77);
+}
+.grid-item:hover:nth-child(736) {
+  --circle-color: rgb(74, 53, 52);
+}
+.grid-item:hover:nth-child(737) {
+  --circle-color: rgb(48, 137, 201);
+}
+.grid-item:hover:nth-child(738) {
+  --circle-color: rgb(221, 86, 209);
+}
+.grid-item:hover:nth-child(739) {
+  --circle-color: rgb(250, 34, 94);
+}
+.grid-item:hover:nth-child(740) {
+  --circle-color: rgb(88, 163, 135);
+}
+.grid-item:hover:nth-child(741) {
+  --circle-color: rgb(106, 175, 141);
+}
+.grid-item:hover:nth-child(742) {
+  --circle-color: rgb(98, 166, 4);
+}
+.grid-item:hover:nth-child(743) {
+  --circle-color: rgb(98, 239, 87);
+}
+.grid-item:hover:nth-child(744) {
+  --circle-color: rgb(58, 181, 219);
+}
+.grid-item:hover:nth-child(745) {
+  --circle-color: rgb(36, 134, 82);
+}
+.grid-item:hover:nth-child(746) {
+  --circle-color: rgb(207, 213, 74);
+}
+.grid-item:hover:nth-child(747) {
+  --circle-color: rgb(38, 175, 42);
+}
+.grid-item:hover:nth-child(748) {
+  --circle-color: rgb(6, 36, 118);
+}
+.grid-item:hover:nth-child(749) {
+  --circle-color: rgb(84, 103, 178);
+}
+.grid-item:hover:nth-child(750) {
+  --circle-color: rgb(160, 165, 57);
+}
+.grid-item:hover:nth-child(751) {
+  --circle-color: rgb(195, 148, 181);
+}
+.grid-item:hover:nth-child(752) {
+  --circle-color: rgb(184, 210, 153);
+}
+.grid-item:hover:nth-child(753) {
+  --circle-color: rgb(160, 215, 216);
+}
+.grid-item:hover:nth-child(754) {
+  --circle-color: rgb(20, 226, 62);
+}
+.grid-item:hover:nth-child(755) {
+  --circle-color: rgb(182, 34, 114);
+}
+.grid-item:hover:nth-child(756) {
+  --circle-color: rgb(80, 242, 58);
+}
+.grid-item:hover:nth-child(757) {
+  --circle-color: rgb(221, 43, 239);
+}
+.grid-item:hover:nth-child(758) {
+  --circle-color: rgb(96, 131, 15);
+}
+.grid-item:hover:nth-child(759) {
+  --circle-color: rgb(10, 118, 21);
+}
+.grid-item:hover:nth-child(760) {
+  --circle-color: rgb(58, 10, 209);
+}
+.grid-item:hover:nth-child(761) {
+  --circle-color: rgb(154, 83, 62);
+}
+.grid-item:hover:nth-child(762) {
+  --circle-color: rgb(62, 233, 40);
+}
+.grid-item:hover:nth-child(763) {
+  --circle-color: rgb(73, 211, 227);
+}
+.grid-item:hover:nth-child(764) {
+  --circle-color: rgb(189, 108, 125);
+}
+.grid-item:hover:nth-child(765) {
+  --circle-color: rgb(84, 86, 159);
+}
+.grid-item:hover:nth-child(766) {
+  --circle-color: rgb(68, 65, 197);
+}
+.grid-item:hover:nth-child(767) {
+  --circle-color: rgb(137, 99, 158);
+}
+.grid-item:hover:nth-child(768) {
+  --circle-color: rgb(83, 173, 75);
+}
+.grid-item:hover:nth-child(769) {
+  --circle-color: rgb(241, 17, 61);
+}
+.grid-item:hover:nth-child(770) {
+  --circle-color: rgb(238, 79, 151);
+}
+.grid-item:hover:nth-child(771) {
+  --circle-color: rgb(51, 110, 5);
+}
+.grid-item:hover:nth-child(772) {
+  --circle-color: rgb(77, 251, 67);
+}
+.grid-item:hover:nth-child(773) {
+  --circle-color: rgb(74, 176, 153);
+}
+.grid-item:hover:nth-child(774) {
+  --circle-color: rgb(125, 202, 110);
+}
+.grid-item:hover:nth-child(775) {
+  --circle-color: rgb(146, 133, 245);
+}
+.grid-item:hover:nth-child(776) {
+  --circle-color: rgb(71, 117, 12);
+}
+.grid-item:hover:nth-child(777) {
+  --circle-color: rgb(146, 119, 149);
+}
+.grid-item:hover:nth-child(778) {
+  --circle-color: rgb(86, 178, 213);
+}
+.grid-item:hover:nth-child(779) {
+  --circle-color: rgb(8, 45, 216);
+}
+.grid-item:hover:nth-child(780) {
+  --circle-color: rgb(177, 7, 133);
+}
+.grid-item:hover:nth-child(781) {
+  --circle-color: rgb(169, 245, 209);
+}
+.grid-item:hover:nth-child(782) {
+  --circle-color: rgb(29, 207, 134);
+}
+.grid-item:hover:nth-child(783) {
+  --circle-color: rgb(143, 176, 217);
+}
+.grid-item:hover:nth-child(784) {
+  --circle-color: rgb(227, 231, 134);
+}
+.grid-item:hover:nth-child(785) {
+  --circle-color: rgb(219, 38, 231);
+}
+.grid-item:hover:nth-child(786) {
+  --circle-color: rgb(9, 121, 211);
+}
+.grid-item:hover:nth-child(787) {
+  --circle-color: rgb(121, 204, 145);
+}
+.grid-item:hover:nth-child(788) {
+  --circle-color: rgb(225, 69, 50);
+}
+.grid-item:hover:nth-child(789) {
+  --circle-color: rgb(184, 117, 105);
+}
+.grid-item:hover:nth-child(790) {
+  --circle-color: rgb(40, 122, 209);
+}
+.grid-item:hover:nth-child(791) {
+  --circle-color: rgb(37, 191, 167);
+}
+.grid-item:hover:nth-child(792) {
+  --circle-color: rgb(103, 149, 15);
+}
+.grid-item:hover:nth-child(793) {
+  --circle-color: rgb(241, 37, 196);
+}
+.grid-item:hover:nth-child(794) {
+  --circle-color: rgb(173, 35, 77);
+}
+.grid-item:hover:nth-child(795) {
+  --circle-color: rgb(137, 50, 48);
+}
+.grid-item:hover:nth-child(796) {
+  --circle-color: rgb(21, 212, 235);
+}
+.grid-item:hover:nth-child(797) {
+  --circle-color: rgb(149, 250, 45);
+}
+.grid-item:hover:nth-child(798) {
+  --circle-color: rgb(131, 14, 239);
+}
+.grid-item:hover:nth-child(799) {
+  --circle-color: rgb(99, 135, 218);
+}
+.grid-item:hover:nth-child(800) {
+  --circle-color: rgb(172, 254, 209);
+}
+.grid-item:hover:nth-child(801) {
+  --circle-color: rgb(123, 89, 103);
+}
+.grid-item:hover:nth-child(802) {
+  --circle-color: rgb(80, 43, 60);
+}
+.grid-item:hover:nth-child(803) {
+  --circle-color: rgb(252, 25, 73);
+}
+.grid-item:hover:nth-child(804) {
+  --circle-color: rgb(152, 92, 236);
+}
+.grid-item:hover:nth-child(805) {
+  --circle-color: rgb(185, 170, 241);
+}
+.grid-item:hover:nth-child(806) {
+  --circle-color: rgb(248, 34, 146);
+}
+.grid-item:hover:nth-child(807) {
+  --circle-color: rgb(105, 99, 253);
+}
+.grid-item:hover:nth-child(808) {
+  --circle-color: rgb(20, 202, 8);
+}
+.grid-item:hover:nth-child(809) {
+  --circle-color: rgb(183, 105, 252);
+}
+.grid-item:hover:nth-child(810) {
+  --circle-color: rgb(3, 18, 61);
+}
+.grid-item:hover:nth-child(811) {
+  --circle-color: rgb(196, 98, 66);
+}
+.grid-item:hover:nth-child(812) {
+  --circle-color: rgb(71, 21, 102);
+}
+.grid-item:hover:nth-child(813) {
+  --circle-color: rgb(165, 164, 236);
+}
+.grid-item:hover:nth-child(814) {
+  --circle-color: rgb(125, 248, 120);
+}
+.grid-item:hover:nth-child(815) {
+  --circle-color: rgb(10, 19, 126);
+}
+.grid-item:hover:nth-child(816) {
+  --circle-color: rgb(234, 220, 62);
+}
+.grid-item:hover:nth-child(817) {
+  --circle-color: rgb(165, 43, 102);
+}
+.grid-item:hover:nth-child(818) {
+  --circle-color: rgb(25, 191, 114);
+}
+.grid-item:hover:nth-child(819) {
+  --circle-color: rgb(219, 243, 94);
+}
+.grid-item:hover:nth-child(820) {
+  --circle-color: rgb(91, 117, 203);
+}
+.grid-item:hover:nth-child(821) {
+  --circle-color: rgb(43, 102, 152);
+}
+.grid-item:hover:nth-child(822) {
+  --circle-color: rgb(84, 30, 166);
+}
+.grid-item:hover:nth-child(823) {
+  --circle-color: rgb(248, 78, 191);
+}
+.grid-item:hover:nth-child(824) {
+  --circle-color: rgb(198, 20, 88);
+}
+.grid-item:hover:nth-child(825) {
+  --circle-color: rgb(170, 231, 175);
+}
+.grid-item:hover:nth-child(826) {
+  --circle-color: rgb(20, 95, 169);
+}
+.grid-item:hover:nth-child(827) {
+  --circle-color: rgb(167, 153, 57);
+}
+.grid-item:hover:nth-child(828) {
+  --circle-color: rgb(157, 215, 158);
+}
+.grid-item:hover:nth-child(829) {
+  --circle-color: rgb(117, 106, 181);
+}
+.grid-item:hover:nth-child(830) {
+  --circle-color: rgb(155, 106, 14);
+}
+.grid-item:hover:nth-child(831) {
+  --circle-color: rgb(233, 158, 249);
+}
+.grid-item:hover:nth-child(832) {
+  --circle-color: rgb(17, 149, 203);
+}
+.grid-item:hover:nth-child(833) {
+  --circle-color: rgb(244, 186, 100);
+}
+.grid-item:hover:nth-child(834) {
+  --circle-color: rgb(7, 27, 146);
+}
+.grid-item:hover:nth-child(835) {
+  --circle-color: rgb(159, 4, 152);
+}
+.grid-item:hover:nth-child(836) {
+  --circle-color: rgb(122, 15, 155);
+}
+.grid-item:hover:nth-child(837) {
+  --circle-color: rgb(187, 196, 27);
+}
+.grid-item:hover:nth-child(838) {
+  --circle-color: rgb(101, 161, 161);
+}
+.grid-item:hover:nth-child(839) {
+  --circle-color: rgb(255, 136, 190);
+}
+.grid-item:hover:nth-child(840) {
+  --circle-color: rgb(160, 227, 158);
+}
+.grid-item:hover:nth-child(841) {
+  --circle-color: rgb(118, 182, 243);
+}
+.grid-item:hover:nth-child(842) {
+  --circle-color: rgb(159, 233, 63);
+}
+.grid-item:hover:nth-child(843) {
+  --circle-color: rgb(244, 75, 79);
+}
+.grid-item:hover:nth-child(844) {
+  --circle-color: rgb(141, 234, 28);
+}
+.grid-item:hover:nth-child(845) {
+  --circle-color: rgb(115, 204, 189);
+}
+.grid-item:hover:nth-child(846) {
+  --circle-color: rgb(155, 155, 96);
+}
+.grid-item:hover:nth-child(847) {
+  --circle-color: rgb(127, 100, 20);
+}
+.grid-item:hover:nth-child(848) {
+  --circle-color: rgb(87, 101, 191);
+}
+.grid-item:hover:nth-child(849) {
+  --circle-color: rgb(59, 175, 105);
+}
+.grid-item:hover:nth-child(850) {
+  --circle-color: rgb(4, 144, 245);
+}
+.grid-item:hover:nth-child(851) {
+  --circle-color: rgb(193, 89, 1);
+}
+.grid-item:hover:nth-child(852) {
+  --circle-color: rgb(171, 181, 84);
+}
+.grid-item:hover:nth-child(853) {
+  --circle-color: rgb(24, 231, 86);
+}
+.grid-item:hover:nth-child(854) {
+  --circle-color: rgb(249, 231, 116);
+}
+.grid-item:hover:nth-child(855) {
+  --circle-color: rgb(6, 11, 219);
+}
+.grid-item:hover:nth-child(856) {
+  --circle-color: rgb(25, 80, 219);
+}
+.grid-item:hover:nth-child(857) {
+  --circle-color: rgb(198, 117, 142);
+}
+.grid-item:hover:nth-child(858) {
+  --circle-color: rgb(222, 142, 214);
+}
+.grid-item:hover:nth-child(859) {
+  --circle-color: rgb(163, 48, 109);
+}
+.grid-item:hover:nth-child(860) {
+  --circle-color: rgb(49, 112, 17);
+}
+.grid-item:hover:nth-child(861) {
+  --circle-color: rgb(219, 38, 126);
+}
+.grid-item:hover:nth-child(862) {
+  --circle-color: rgb(65, 92, 62);
+}
+.grid-item:hover:nth-child(863) {
+  --circle-color: rgb(70, 97, 129);
+}
+.grid-item:hover:nth-child(864) {
+  --circle-color: rgb(109, 120, 126);
+}
+.grid-item:hover:nth-child(865) {
+  --circle-color: rgb(58, 107, 118);
+}
+.grid-item:hover:nth-child(866) {
+  --circle-color: rgb(250, 172, 42);
+}
+.grid-item:hover:nth-child(867) {
+  --circle-color: rgb(139, 181, 182);
+}
+.grid-item:hover:nth-child(868) {
+  --circle-color: rgb(91, 155, 150);
+}
+.grid-item:hover:nth-child(869) {
+  --circle-color: rgb(112, 79, 53);
+}
+.grid-item:hover:nth-child(870) {
+  --circle-color: rgb(113, 133, 162);
+}
+.grid-item:hover:nth-child(871) {
+  --circle-color: rgb(95, 103, 247);
+}
+.grid-item:hover:nth-child(872) {
+  --circle-color: rgb(90, 49, 84);
+}
+.grid-item:hover:nth-child(873) {
+  --circle-color: rgb(7, 87, 166);
+}
+.grid-item:hover:nth-child(874) {
+  --circle-color: rgb(2, 82, 61);
+}
+.grid-item:hover:nth-child(875) {
+  --circle-color: rgb(180, 173, 143);
+}
+.grid-item:hover:nth-child(876) {
+  --circle-color: rgb(104, 17, 138);
+}
+.grid-item:hover:nth-child(877) {
+  --circle-color: rgb(90, 23, 247);
+}
+.grid-item:hover:nth-child(878) {
+  --circle-color: rgb(38, 141, 208);
+}
+.grid-item:hover:nth-child(879) {
+  --circle-color: rgb(198, 119, 169);
+}
+.grid-item:hover:nth-child(880) {
+  --circle-color: rgb(152, 92, 195);
+}
+.grid-item:hover:nth-child(881) {
+  --circle-color: rgb(55, 107, 140);
+}
+.grid-item:hover:nth-child(882) {
+  --circle-color: rgb(251, 106, 141);
+}
+.grid-item:hover:nth-child(883) {
+  --circle-color: rgb(21, 165, 75);
+}
+.grid-item:hover:nth-child(884) {
+  --circle-color: rgb(180, 12, 82);
+}
+.grid-item:hover:nth-child(885) {
+  --circle-color: rgb(120, 102, 63);
+}
+.grid-item:hover:nth-child(886) {
+  --circle-color: rgb(72, 135, 206);
+}
+.grid-item:hover:nth-child(887) {
+  --circle-color: rgb(225, 141, 89);
+}
+.grid-item:hover:nth-child(888) {
+  --circle-color: rgb(33, 6, 70);
+}
+.grid-item:hover:nth-child(889) {
+  --circle-color: rgb(253, 197, 83);
+}
+.grid-item:hover:nth-child(890) {
+  --circle-color: rgb(44, 49, 93);
+}
+.grid-item:hover:nth-child(891) {
+  --circle-color: rgb(104, 15, 130);
+}
+.grid-item:hover:nth-child(892) {
+  --circle-color: rgb(89, 195, 70);
+}
+.grid-item:hover:nth-child(893) {
+  --circle-color: rgb(249, 93, 63);
+}
+.grid-item:hover:nth-child(894) {
+  --circle-color: rgb(247, 124, 44);
+}
+.grid-item:hover:nth-child(895) {
+  --circle-color: rgb(222, 159, 132);
+}
+.grid-item:hover:nth-child(896) {
+  --circle-color: rgb(239, 153, 249);
+}
+.grid-item:hover:nth-child(897) {
+  --circle-color: rgb(98, 62, 71);
+}
+.grid-item:hover:nth-child(898) {
+  --circle-color: rgb(48, 182, 209);
+}
+.grid-item:hover:nth-child(899) {
+  --circle-color: rgb(154, 254, 38);
+}
+.grid-item:hover:nth-child(900) {
+  --circle-color: rgb(133, 140, 88);
+}
+
+/*# sourceMappingURL=style.css.map */
