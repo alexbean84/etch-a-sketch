@@ -12,7 +12,7 @@ My Project Live: https://alexbean84.github.io/etch-a-sketch/
 GitHub Code Files: https://github.com/alexbean84/etch-a-sketch
 
 What I learned:
-- How to create sqaure divs using JavaScript
+- How to create square divs using JavaScript
 - How to edit the square divs as a grid using CSS
 - How to properly use CSS in order to add effects
 to certain elements like hovering or rotating
