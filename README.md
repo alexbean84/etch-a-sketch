@@ -5,7 +5,7 @@ to showcase my JavaScript and CSS skills. After the user chooses how
 many squares should be rendered inside the main container he has the 
 freedom to draw whatever he desires by hovering over the squares.
 
-This is Project: Etch-a-Sketch from The Odin Project https://www.theodinproject.com/lessons/foundations-etch-a-sketch
+This is Project: Etch-A-Sketch from The Odin Project https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
 My Project Live: https://alexbean84.github.io/etch-a-sketch/
 
